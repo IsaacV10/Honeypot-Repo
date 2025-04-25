@@ -6,7 +6,7 @@ A lightweight SSH honeypot built in Python using Paramiko to simulate a vulnerab
 - Logs IP addresses, login attempts, and shell commands
 - Uses RotatingFileHandler for efficient logging
 - Deployable on any cloud VM (tested on Ubuntu EC2)
-- Realistic banner to simulates SSH service
+- Somewhat realistic banner to simulates SSH service
 
 ## Technologies Used
 - Python
