@@ -1,5 +1,7 @@
 I successfully deployed the honeypot on an AWS EC2 instance.
 
-During the initial deployment, I received a few connection attempts from bots. Most of them disconnected shortly after establishing connection, and no credentials or commands were captured beyond the initial handshake. To ensure everything was working as intended, I tested the honeypot on my local machine to make sure it was working, then deployed it to the cloud. Everything appeared to be functioning as intended on both ends.
+During the initial deployment, I received a few connection attempts from bots. Most of them disconnected shortly after establishing connection, and no credentials or commands were captured beyond the initial handshake. 
+To ensure everything was working as intended, I tested the honeypot on my local machine to make sure it was working, then deployed it to the cloud. Everything appeared to be functioning as intended on both ends.
 
-did not receive a lot of traffic on port 2222; plan on rerouting to port 22
+  - did not receive a lot of traffic on port 2222; plan on rerouting to port 22
+ 
