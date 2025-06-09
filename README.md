@@ -14,6 +14,8 @@ A lightweight SSH honeypot built in Python using Paramiko to simulate a vulnerab
 - AWS EC2 (Ubuntu)
 - Linux CLI
 
+
+
 Date 5/15/25
 
 I successfully deployed the honeypot on an AWS EC2 instance.
