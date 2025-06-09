@@ -8,7 +8,7 @@ A lightweight SSH honeypot built in Python using Paramiko to simulate a vulnerab
 - Deployable on any cloud VM (tested on Ubuntu EC2)
 - Somewhat realistic banner to simulates SSH service
 
-## Technologies Used
+## Tools Used
 - Python
 - Paramiko
 - AWS EC2 (Ubuntu)
