@@ -1,4 +1,4 @@
-# Cloud-Based SSH Honeypot
+# SSH Honeypot
 
 A lightweight SSH honeypot built in Python using Paramiko to simulate a vulnerable Linux server and capture real-world brute-force login attempts. Deployed on AWS EC2 for attacker interaction and logging.
 
