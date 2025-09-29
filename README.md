@@ -1,5 +1,5 @@
 # SSH & Web Honeypot
-A modular, graphic-based honeypot written in Python that supports SSH and HTTP and is deployed on AWS EC2. Using Paramiko for SSH emulation, it simulates a vulnerable Linux server to capture IPs, usernames, passwords, and attacker commands for logging and analysis.
+A Research honeypot written in Python that supports SSH and HTTP and is deployed on AWS EC2. Using Paramiko for SSH emulation, it simulates a vulnerable Linux server to capture IPs, usernames, passwords, and attacker commands for logging and analysis. The main goal of this project is to learn how malicious actors attack vulnerable servers and to analyze their methods.
 
 ## Features
 - Logs IP addresses, login attempts, and shell commands
