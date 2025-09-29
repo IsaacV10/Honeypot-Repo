@@ -4,7 +4,7 @@ A modular, graphic-based honeypot written in Python that supports SSH and HTTP a
 ## Features
 - Logs IP addresses, login attempts, and shell commands
 - Uses RotatingFileHandler for efficient logging
-- Dashboard showing live traffic, login attempts, top source IPs, and command timelines.(Comming Soon) 
+- Dashboard showing live traffic, login attempts, top source IPs, and command timelines.(Coming Soon) 
 
 ## Tools & Technologies 
 - Python
