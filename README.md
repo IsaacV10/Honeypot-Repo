@@ -1,10 +1,21 @@
-# SSH & Web Honeypot
-A Research honeypot written in Python that supports SSH and HTTP and is deployed on AWS EC2. Using Paramiko for SSH emulation, it simulates a vulnerable Linux server to capture IPs, usernames, passwords, and attacker commands for logging and analysis. The main goal of this project is to learn how malicious actors attack vulnerable servers and to analyze their methods.
+🍯 SSH Honeypot & Threat Intelligence Dashboard
+A fully functional SSH honeypot deployed on AWS EC2 that captures real-world attack data and visualizes it through a live threat intelligence dashboard with GeoIP mapping.
 
-## Features
-- Logs IP addresses, login attempts, and shell commands
-- Uses RotatingFileHandler for efficient logging
-- Dashboard showing live traffic, login attempts, top source IPs, and command timelines.(Coming Soon) 
+# Overview
+This project simulates a legitimate Linux server to attract and log unauthorized SSH access attempts. All captured data is structured in JSON format and displayed through a real-time Flask dashboard featuring attack timelines, credential analysis, and a world map showing attack origins.
+
+# Features
+## SSH Honeypot — Emulates a real Debian Linux server using Paramiko
+Convincing Shell — Fake filesystem with secrets.txt, jumpbox1.conf, bash history, /etc/passwd, and more
+JSON Structured Logging — All auth attempts and commands logged in structured JSON
+Real-time Dashboard — Live Flask dashboard with auto-refresh every 30 seconds
+GeoIP World Map — Interactive Leaflet map showing attack origins
+Attack Timeline — Hourly chart showing attack patterns
+Credential Analysis — Top usernames, passwords, and source IPs
+Country Breakdown — Flag emoji + bar chart by country
+Persistent RSA Host Key — Consistent fingerprint across restarts
+Systemd Services — Both services auto-start on reboot
+Legal Banner — Proper authorized-use-only warning under Maryland Code
 
 ## Tools & Technologies 
 - Python
