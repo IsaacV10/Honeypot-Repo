@@ -5,7 +5,7 @@ A fully functional SSH honeypot deployed on AWS EC2 that captures real-world att
 This project simulates a legitimate Linux server to attract and log unauthorized SSH access attempts. All captured data is structured in JSON format and displayed through a real-time Flask dashboard featuring attack timelines, credential analysis, and a world map showing attack origins.
 
 # Features
-## SSH Honeypot — Emulates a real Debian Linux server using Paramiko
+SSH Honeypot — Emulates a real Debian Linux server using Paramiko
 Convincing Shell — Fake filesystem with secrets.txt, jumpbox1.conf, bash history, /etc/passwd, and more
 JSON Structured Logging — All auth attempts and commands logged in structured JSON
 Real-time Dashboard — Live Flask dashboard with auto-refresh every 30 seconds
