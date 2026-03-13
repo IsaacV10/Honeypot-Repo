@@ -18,7 +18,7 @@ This project simulates a legitimate Linux server to attract and log unauthorized
 - **Country Breakdown** — Flag emoji + bar chart by country
 - **Persistent RSA Host Key** — Consistent fingerprint across restarts
 - **Systemd Services** — Both services auto-start on reboot
-- **Legal Banner** — Proper authorized-use-only warning under Maryland Code
+- **Legal Banner** — Proper authorized-use-only warning
  
 ---
 
@@ -30,8 +30,8 @@ This project simulates a legitimate Linux server to attract and log unauthorized
 | Web Framework | Flask |
 | Frontend | HTML, CSS, JavaScript |
 | Charts | Chart.js |
-| Map | Leaflet.js + OpenStreetMap |
-| GeoIP | ip-api.com (free, no key required) |
+| Map | Leaflet.js |
+| GeoIP | ip-api.com |
 | Logging | Python RotatingFileHandler (JSON) |
 | Hosting | AWS EC2 (Ubuntu 22.04) |
 | Process Management | systemd |
