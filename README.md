@@ -78,11 +78,9 @@ honeypot/
 | Frontend | HTML, CSS, JavaScript |
 | Charts | Chart.js |
 | Map | Leaflet.js + OpenStreetMap |
-| GeoIP | ip-api.com (free, no key required) |
+| GeoIP | ip-api.com |
 | Logging | Python RotatingFileHandler (JSON) |
 | Hosting | AWS EC2 (Ubuntu 22.04) |
-| Process Management | systemd |
-| Network | iptables NAT redirect |
  
 ---
  
@@ -95,7 +93,7 @@ sudo apt install python3-pip -y
 sudo pip3 install paramiko flask --break-system-packages --ignore-installed
 ```
  
-### Setup Order (Critical!)
+### Setup Order
 ```bash
 # 1. Set up real SSH on port 2200 FIRST
 sudo nano /etc/ssh/sshd_config   # Add: Port 2200
@@ -129,13 +127,14 @@ sudo systemctl start honeypot honeypot-dashboard
 | Port | Source | Purpose |
 |------|--------|---------|
 | 22 | 0.0.0.0/0 | Honeypot bait (public) |
-| 2200 | Your IP only | Real SSH admin access |
-| 5000 | Your IP only | Dashboard access |
+| 2200 | MyIPaddress | Real SSH admin access |
+| 5000 | 3.128.181.237 | Dashboard access |
  
 ---
- 
-## 📊 Sample Dashboard
- 
+## First Dashboard
+<img width="2555" height="1232" alt="Screenshot 2026-03-08 035453" src="https://github.com/user-attachments/assets/ceb4e706-ba40-4181-9089-3528c68de4db" />
+## Second Updated UI dashboard
+<img width="2563" height="1148" alt="Screenshot 2026-03-19 201111" src="https://github.com/user-attachments/assets/ca8f5b67-91a7-4970-bac7-fe827917b3fb" />  
 The dashboard displays:
 - Total auth attempts, unique IPs, commands run, and connections
 - Hourly attack timeline chart
@@ -178,9 +177,9 @@ After running the honeypot for approximately two weeks:
  
 ## 🧠 Lessons Learned
  
-- **Bots scan the entire internet constantly** — an open port 22 gets hit within minutes
+- **Bots scan the entire internet constantly**
 - **Credential stuffing is real** — the same weak passwords appear repeatedly from global sources
-- **Attribution is hard** — most attacks route through VPS providers in Singapore/EU to hide origin
+- **Attribution is hard** — most attacks route through VPS providers in Singapore/EU to hide origin. After the installation of the GEOmap there was a large number of attacks coming from the states. 
 - **SSH keys >> passwords** — not a single attacker used a valid key, only password brute force
-- **Always secure admin access before locking down** — learned this the hard way after getting locked out by our own honeypot!
-- **JSON logging is powerful** — structured logs made dashboard analysis much easier than plain text
+- **Always secure admin access before locking down** — learned this the hard way after getting locked out from my own honeypot.
+- **JSON logging** — structured logs made dashboard analysis much easier than plain text
